@@ -1,0 +1,230 @@
+[debug] [2025-06-23T18:10:58.296Z] ----------------------------------------------------------------------
+[debug] [2025-06-23T18:10:58.298Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\lucar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-06-23T18:10:58.299Z] CLI Version:   14.8.0
+[debug] [2025-06-23T18:10:58.299Z] Platform:      win32
+[debug] [2025-06-23T18:10:58.299Z] Node Version:  v22.14.0
+[debug] [2025-06-23T18:10:58.300Z] Time:          Mon Jun 23 2025 13:10:58 GMT-0500 (Central Daylight Time)
+[debug] [2025-06-23T18:10:58.300Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-23T18:10:58.308Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-23T18:10:58.308Z] > authorizing via signed-in user (alexanderchan486@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\lucar\OneDrive\Desktop\qpc-scaffolding
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-06-23T18:11:03.207Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:11:03.207Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:11:03.209Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-06-23T18:11:03.543Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-06-23T18:11:03.544Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project qpc-scaffolding (QPC-scaffolding) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-06-23T18:11:04.125Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:11:04.125Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:11:04.125Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/qpc-scaffolding/billingInfo [none]
+[debug] [2025-06-23T18:11:04.283Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/qpc-scaffolding/billingInfo 200
+[debug] [2025-06-23T18:11:04.283Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/qpc-scaffolding/billingInfo {"name":"projects/qpc-scaffolding/billingInfo","projectId":"qpc-scaffolding","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-06-23T18:11:04.285Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:11:04.285Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:11:04.285Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/qpc-scaffolding/locations/-/services [none]
+[debug] [2025-06-23T18:11:04.740Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/qpc-scaffolding/locations/-/services 200
+[debug] [2025-06-23T18:11:04.741Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/qpc-scaffolding/locations/-/services {}
+[info] +  Wrote dataconnect\dataconnect.yaml 
+[info] +  Wrote dataconnect\schema\schema.gql 
+[info] +  Wrote dataconnect\connector\connector.yaml 
+[info] +  Wrote dataconnect\connector\queries.gql 
+[info] +  Wrote dataconnect\connector\mutations.gql 
+[info] +  Detected WEB app in directory C:\Users\lucar\OneDrive\Desktop\qpc-scaffolding 
+[info] i  Writing your new SDK configuration to C:\Users\lucar\OneDrive\Desktop\qpc-scaffolding\dataconnect\connector/connector.yaml 
+[info] +  Wrote dataconnect\connector\connector.yaml 
+[info] i  dataconnect: downloading dataconnect-emulator-2.7.1.exe... {"metadata":{"emulator":{"name":"dataconnect"},"message":"downloading dataconnect-emulator-2.7.1.exe..."}}
+[debug] [2025-06-23T18:11:17.487Z] >>> [apiv2][query] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-v2.7.1 
+[debug] [2025-06-23T18:11:17.652Z] <<< [apiv2][status] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-v2.7.1 200
+[debug] [2025-06-23T18:11:17.653Z] <<< [apiv2][body] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-v2.7.1 [stream]
+[debug] [2025-06-23T18:11:19.243Z] defaultcredentials: writing to file C:\Users\lucar\AppData\Roaming\firebase\alexanderchan486_gmail_com_application_default_credentials.json
+[info] I0623 13:11:19.716431   22900 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\lucar\\OneDrive\\Desktop\\qpc-scaffolding\\dataconnect-generated\\js\\default-connector"
+I0623 13:11:19.729074   22900 generate.go:40] Generated all sources. Writing them to disk...
+I0623 13:11:19.781406   22900 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\lucar\\OneDrive\\Desktop\\qpc-scaffolding\\dataconnect-generated\\js\\default-connector"
+Generated sources: react\esm\index.esm.js [0B] angular\package.json [661B] angular\index.cjs.js [1B] angular\esm\index.esm.js [0B] esm\package.json [17B] react\index.d.ts [228B] react\index.cjs.js [0B] angular\esm\package.json [17B] README.md [3025B] react\package.json [468B] angular\index.d.ts [0B] index.d.ts [246B] react\esm\package.json [17B] package.json [1110B] react\README.md [5603B] angular\README.md [5309B] esm\index.esm.js [118B] index.cjs.js [153B] 
+
+[info] i  Generated SDK code for default 
+[info] i  Visit https://firebase.google.com/docs/data-connect/web-sdk#react for more information on how to set up React Generated SDKs for Firebase Data Connect 
+[info] i  Run `npm i --save @angular/fire @tanstack-query-firebase/angular @tanstack/angular-query-experimental` to install angular sdk dependencies.
+Visit https://github.com/invertase/tanstack-query-firebase/tree/main/packages/angular for more information on how to set up Angular Generated SDKs for Firebase Data Connect 
+[info] +  If you'd like to add more generated SDKs to your app your later, run firebase init dataconnect:sdk again 
+[info] i  If you'd like to provision a CloudSQL Postgres instance on the Firebase Data Connect no-cost trial:
+1. Please upgrade to the pay-as-you-go (Blaze) billing plan. Visit the following page:
+     https://console.firebase.google.com/project/qpc-scaffolding/usage/details
+2. Run firebase init dataconnect again to configure the Cloud SQL instance.
+3. Run firebase deploy --only dataconnect to deploy your Data Connect service. 
+[info] 
+=== Firestore Setup
+[info] i  firestore: ensuring required API firestore.googleapis.com is enabled... 
+[debug] [2025-06-23T18:11:19.800Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:11:19.800Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:11:19.800Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/firestore.googleapis.com [none]
+[debug] [2025-06-23T18:11:19.800Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/firestore.googleapis.com x-goog-quota-user=projects/qpc-scaffolding
+[debug] [2025-06-23T18:11:20.108Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/firestore.googleapis.com 200
+[debug] [2025-06-23T18:11:20.108Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/firestore.googleapis.com [omitted]
+[warn] !  firestore: missing required API firestore.googleapis.com. Enabling now... 
+[debug] [2025-06-23T18:11:20.109Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:11:20.109Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:11:20.109Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/firestore.googleapis.com:enable [none]
+[debug] [2025-06-23T18:11:20.109Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/firestore.googleapis.com:enable x-goog-quota-user=projects/qpc-scaffolding
+[debug] [2025-06-23T18:11:20.372Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/firestore.googleapis.com:enable 200
+[debug] [2025-06-23T18:11:20.372Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/firestore.googleapis.com:enable [omitted]
+[debug] [2025-06-23T18:11:30.386Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:11:30.386Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:11:30.386Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/qpc-scaffolding/databases [none]
+[debug] [2025-06-23T18:11:30.824Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/qpc-scaffolding/databases 200
+[debug] [2025-06-23T18:11:30.825Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/qpc-scaffolding/databases {}
+[debug] [2025-06-23T18:11:30.825Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:11:30.825Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:11:30.825Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/qpc-scaffolding/locations [none]
+[debug] [2025-06-23T18:11:30.919Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/qpc-scaffolding/locations 200
+[debug] [2025-06-23T18:11:30.920Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/qpc-scaffolding/locations {"locations":[{"name":"projects/qpc-scaffolding/locations/eur3","labels":{"appengine.googleapis.com/geo":"europe-west","cloud.googleapis.com/location":"eur3","cloud.googleapis.com/geo":"eur3"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"eur3","displayName":"Europe"},{"name":"projects/qpc-scaffolding/locations/nam5","labels":{"appengine.googleapis.com/geo":"us-central","cloud.googleapis.com/location":"nam5","cloud.googleapis.com/geo":"nam5"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"nam5","displayName":"United States"},{"name":"projects/qpc-scaffolding/locations/nam7","labels":{"cloud.googleapis.com/location":"nam7","cloud.googleapis.com/geo":"nam7"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"nam7","displayName":"United States"},{"name":"projects/qpc-scaffolding/locations/africa-south1","labels":{"cloud.googleapis.com/location":"africa-south1","cloud.googleapis.com/region":"africa-south1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"africa-south1","displayName":"Johannesburg"},{"name":"projects/qpc-scaffolding/locations/asia-east1","labels":{"appengine.googleapis.com/region":"asia-east1","cloud.googleapis.com/location":"asia-east1","cloud.googleapis.com/region":"asia-east1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-east1","displayName":"Taiwan"},{"name":"projects/qpc-scaffolding/locations/asia-east2","labels":{"appengine.googleapis.com/region":"asia-east2","cloud.googleapis.com/location":"asia-east2","cloud.googleapis.com/region":"asia-east2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-east2","displayName":"Hong Kong"},{"name":"projects/qpc-scaffolding/locations/asia-northeast1","labels":{"appengine.googleapis.com/region":"asia-northeast1","cloud.googleapis.com/location":"asia-northeast1","cloud.googleapis.com/region":"asia-northeast1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-northeast1","displayName":"Tokyo"},{"name":"projects/qpc-scaffolding/locations/asia-northeast2","labels":{"appengine.googleapis.com/region":"asia-northeast2","cloud.googleapis.com/location":"asia-northeast2","cloud.googleapis.com/region":"asia-northeast2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-northeast2","displayName":"Osaka"},{"name":"projects/qpc-scaffolding/locations/asia-northeast3","labels":{"appengine.googleapis.com/region":"asia-northeast3","cloud.googleapis.com/location":"asia-northeast3","cloud.googleapis.com/region":"asia-northeast3"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-northeast3","displayName":"Seoul"},{"name":"projects/qpc-scaffolding/locations/asia-south1","labels":{"appengine.googleapis.com/region":"asia-south1","cloud.googleapis.com/location":"asia-south1","cloud.googleapis.com/region":"asia-south1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-south1","displayName":"Mumbai"},{"name":"projects/qpc-scaffolding/locations/asia-south2","labels":{"cloud.googleapis.com/location":"asia-south2","cloud.googleapis.com/region":"asia-south2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-south2","displayName":"Delhi"},{"name":"projects/qpc-scaffolding/locations/asia-southeast1","labels":{"appengine.googleapis.com/region":"asia-southeast1","cloud.googleapis.com/location":"asia-southeast1","cloud.googleapis.com/region":"asia-southeast1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-southeast1","displayName":"Singapore"},{"name":"projects/qpc-scaffolding/locations/asia-southeast2","labels":{"appengine.googleapis.com/region":"asia-southeast2","cloud.googleapis.com/location":"asia-southeast2","cloud.googleapis.com/region":"asia-southeast2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-southeast2","displayName":"Jakarta"},{"name":"projects/qpc-scaffolding/locations/australia-southeast1","labels":{"appengine.googleapis.com/region":"australia-southeast1","cloud.googleapis.com/location":"australia-southeast1","cloud.googleapis.com/region":"australia-southeast1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"australia-southeast1","displayName":"Sydney"},{"name":"projects/qpc-scaffolding/locations/australia-southeast2","labels":{"cloud.googleapis.com/location":"australia-southeast2","cloud.googleapis.com/region":"australia-southeast2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"australia-southeast2","displayName":"Melbourne"},{"name":"projects/qpc-scaffolding/locations/europe-central2","labels":{"appengine.googleapis.com/region":"europe-central2","cloud.googleapis.com/location":"europe-central2","cloud.googleapis.com/region":"europe-central2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-central2","displayName":"Warsaw"},{"name":"projects/qpc-scaffolding/locations/europe-north1","labels":{"cloud.googleapis.com/location":"europe-north1","cloud.googleapis.com/region":"europe-north1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-north1","displayName":"Finland"},{"name":"projects/qpc-scaffolding/locations/europe-north2","labels":{"cloud.googleapis.com/location":"europe-north2","cloud.googleapis.com/region":"europe-north2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-north2","displayName":"Stockholm"},{"name":"projects/qpc-scaffolding/locations/europe-southwest1","labels":{"cloud.googleapis.com/location":"europe-southwest1","cloud.googleapis.com/region":"europe-southwest1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-southwest1","displayName":"Madrid"},{"name":"projects/qpc-scaffolding/locations/europe-west1","labels":{"cloud.googleapis.com/location":"europe-west1","cloud.googleapis.com/region":"europe-west1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west1","displayName":"Belgium"},{"name":"projects/qpc-scaffolding/locations/europe-west10","labels":{"cloud.googleapis.com/location":"europe-west10","cloud.googleapis.com/region":"europe-west10"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west10","displayName":"Berlin"},{"name":"projects/qpc-scaffolding/locations/europe-west12","labels":{"cloud.googleapis.com/location":"europe-west12","cloud.googleapis.com/region":"europe-west12"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west12","displayName":"Turin"},{"name":"projects/qpc-scaffolding/locations/europe-west2","labels":{"appengine.googleapis.com/region":"europe-west2","cloud.googleapis.com/location":"europe-west2","cloud.googleapis.com/region":"europe-west2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west2","displayName":"London"},{"name":"projects/qpc-scaffolding/locations/europe-west3","labels":{"appengine.googleapis.com/region":"europe-west3","cloud.googleapis.com/location":"europe-west3","cloud.googleapis.com/region":"europe-west3"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west3","displayName":"Frankfurt"},{"name":"projects/qpc-scaffolding/locations/europe-west4","labels":{"cloud.googleapis.com/location":"europe-west4","cloud.googleapis.com/region":"europe-west4"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west4","displayName":"Netherlands"},{"name":"projects/qpc-scaffolding/locations/europe-west6","labels":{"appengine.googleapis.com/region":"europe-west6","cloud.googleapis.com/location":"europe-west6","cloud.googleapis.com/region":"europe-west6"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west6","displayName":"Zurich"},{"name":"projects/qpc-scaffolding/locations/europe-west8","labels":{"cloud.googleapis.com/location":"europe-west8","cloud.googleapis.com/region":"europe-west8"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west8","displayName":"Milan"},{"name":"projects/qpc-scaffolding/locations/europe-west9","labels":{"cloud.googleapis.com/location":"europe-west9","cloud.googleapis.com/region":"europe-west9"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west9","displayName":"Paris"},{"name":"projects/qpc-scaffolding/locations/me-central1","labels":{"cloud.googleapis.com/location":"me-central1","cloud.googleapis.com/region":"me-central1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"me-central1","displayName":"Doha"},{"name":"projects/qpc-scaffolding/locations/me-central2","labels":{"cloud.googleapis.com/location":"me-central2","cloud.googleapis.com/region":"me-central2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"me-central2","displayName":"Dammam"},{"name":"projects/qpc-scaffolding/locations/me-west1","labels":{"cloud.googleapis.com/location":"me-west1","cloud.googleapis.com/region":"me-west1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"me-west1","displayName":"Tel Aviv"},{"name":"projects/qpc-scaffolding/locations/northamerica-northeast1","labels":{"appengine.googleapis.com/region":"northamerica-northeast1","cloud.googleapis.com/location":"northamerica-northeast1","cloud.googleapis.com/region":"northamerica-northeast1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"northamerica-northeast1","displayName":"Montréal"},{"name":"projects/qpc-scaffolding/locations/northamerica-northeast2","labels":{"cloud.googleapis.com/location":"northamerica-northeast2","cloud.googleapis.com/region":"northamerica-northeast2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"northamerica-northeast2","displayName":"Toronto"},{"name":"projects/qpc-scaffolding/locations/northamerica-south1","labels":{"cloud.googleapis.com/location":"northamerica-south1","cloud.googleapis.com/region":"northamerica-south1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"northamerica-south1","displayName":"Mexico"},{"name":"projects/qpc-scaffolding/locations/southamerica-east1","labels":{"appengine.googleapis.com/region":"southamerica-east1","cloud.googleapis.com/location":"southamerica-east1","cloud.googleapis.com/region":"southamerica-east1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"southamerica-east1","displayName":"São Paulo"},{"name":"projects/qpc-scaffolding/locations/southamerica-west1","labels":{"cloud.googleapis.com/location":"southamerica-west1","cloud.googleapis.com/region":"southamerica-west1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"southamerica-west1","displayName":"Santiago"},{"name":"projects/qpc-scaffolding/locations/us-central1","labels":{"cloud.googleapis.com/location":"us-central1","cloud.googleapis.com/region":"us-central1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-central1","displayName":"Iowa"},{"name":"projects/qpc-scaffolding/locations/us-east1","labels":{"appengine.googleapis.com/region":"us-east1","cloud.googleapis.com/location":"us-east1","cloud.googleapis.com/region":"us-east1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-east1","displayName":"South Carolina"},{"name":"projects/qpc-scaffolding/locations/us-east4","labels":{"appengine.googleapis.com/region":"us-east4","cloud.googleapis.com/location":"us-east4","cloud.googleapis.com/region":"us-east4"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-east4","displayName":"Northern Virginia"},{"name":"projects/qpc-scaffolding/locations/us-east5","labels":{"cloud.googleapis.com/location":"us-east5","cloud.googleapis.com/region":"us-east5"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-east5","displayName":"Columbus"},{"name":"projects/qpc-scaffolding/locations/us-south1","labels":{"cloud.googleapis.com/location":"us-south1","cloud.googleapis.com/region":"us-south1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-south1","displayName":"Dallas"},{"name":"projects/qpc-scaffolding/locations/us-west1","labels":{"appengine.googleapis.com/region":"us-west1","cloud.googleapis.com/location":"us-west1","cloud.googleapis.com/region":"us-west1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west1","displayName":"Oregon"},{"name":"projects/qpc-scaffolding/locations/us-west2","labels":{"appengine.googleapis.com/region":"us-west2","cloud.googleapis.com/location":"us-west2","cloud.googleapis.com/region":"us-west2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west2","displayName":"Los Angeles"},{"name":"projects/qpc-scaffolding/locations/us-west3","labels":{"appengine.googleapis.com/region":"us-west3","cloud.googleapis.com/location":"us-west3","cloud.googleapis.com/region":"us-west3"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west3","displayName":"Salt Lake City"},{"name":"projects/qpc-scaffolding/locations/us-west4","labels":{"appengine.googleapis.com/region":"us-west4","cloud.googleapis.com/location":"us-west4","cloud.googleapis.com/region":"us-west4"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west4","displayName":"Las Vegas"},{"name":"projects/qpc-scaffolding/locations/us-west8","labels":{"cloud.googleapis.com/location":"us-west8","cloud.googleapis.com/region":"us-west8"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west8","displayName":"Phoenix"}]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-06-23T18:12:37.603Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:12:37.603Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:12:37.603Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/qpc-scaffolding/releases pageSize=10&pageToken=
+[debug] [2025-06-23T18:12:37.859Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/qpc-scaffolding/releases 200
+[debug] [2025-06-23T18:12:37.859Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/qpc-scaffolding/releases {}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-06-23T18:12:39.044Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:12:39.044Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:12:39.044Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:12:39.044Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:12:39.044Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/qpc-scaffolding/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-06-23T18:12:39.047Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/qpc-scaffolding/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-06-23T18:12:39.355Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/qpc-scaffolding/databases/(default)/collectionGroups/-/indexes 404
+[debug] [2025-06-23T18:12:39.355Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/qpc-scaffolding/databases/(default)/collectionGroups/-/indexes {"error":{"code":404,"message":"Project 'qpc-scaffolding' or database '(default)' does not exist.","status":"NOT_FOUND"}}
+[info] +  Wrote firestore.rules 
+[info] +  Wrote firestore.indexes.json 
+[info] 
+=== Genkit Setup
+[debug] [2025-06-23T18:12:39.396Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/qpc-scaffolding/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 404
+[debug] [2025-06-23T18:12:39.396Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/qpc-scaffolding/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"error":{"code":404,"message":"Project 'qpc-scaffolding' or database '(default)' does not exist.","status":"NOT_FOUND"}}
+[debug] [2025-06-23T18:12:46.053Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-23T18:12:46.053Z] > authorizing via signed-in user (alexanderchan486@gmail.com)
+[debug] [2025-06-23T18:12:46.053Z] [iam] checking project qpc-scaffolding for permissions ["firebase.projects.get"]
+[debug] [2025-06-23T18:12:46.053Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:12:46.054Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:12:46.054Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/qpc-scaffolding:testIamPermissions [none]
+[debug] [2025-06-23T18:12:46.054Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/qpc-scaffolding:testIamPermissions x-goog-quota-user=projects/qpc-scaffolding
+[debug] [2025-06-23T18:12:46.054Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/qpc-scaffolding:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-23T18:12:46.300Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/qpc-scaffolding:testIamPermissions 200
+[debug] [2025-06-23T18:12:46.300Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/qpc-scaffolding:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-23T18:12:46.301Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:12:46.301Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:12:46.301Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:12:46.301Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:12:46.302Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-06-23T18:12:46.302Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/qpc-scaffolding
+[debug] [2025-06-23T18:12:46.303Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-06-23T18:12:46.303Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/qpc-scaffolding
+[debug] [2025-06-23T18:12:46.565Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/runtimeconfig.googleapis.com 200
+[debug] [2025-06-23T18:12:46.565Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-06-23T18:12:46.574Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/cloudfunctions.googleapis.com 200
+[debug] [2025-06-23T18:12:46.574Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-06-23T18:12:46.575Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:12:46.575Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:12:46.575Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2025-06-23T18:12:46.575Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/qpc-scaffolding
+[debug] [2025-06-23T18:12:46.886Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2025-06-23T18:12:46.886Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/qpc-scaffolding/services/cloudfunctions.googleapis.com:enable [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+[info] i  genkit: Installing Genkit CLI version 1.13.0
+ 
+[info] i  genkit: Installing NPM packages for genkit 
+[info] +  genkit: Successfully installed NPM packages 
+[info] i  genkit: Updating tsconfig.json 
+[info] +  genkit: Successfully updated tsconfig.json 
+[info] i  genkit: Updating package.json 
+[info] +  genkit: Successfully updated package.json 
+[info] Telemetry data can be used to monitor and gain insights into your AI features. There may be a cost associated with using this feature. See https://firebase.google.com/docs/genkit/observability/telemetry-collection.
+[info] i  genkit: Generating sample file 
+[info] +  genkit: Successfully generated sample file (src/genkit-sample.ts) 
+[info] 
+[info] 
+Login to Google Cloud using:
+[info]     gcloud auth application-default login --project qpc-scaffolding
+
+[info] Then start the Genkit developer experience by running:
+[info]     cd functions && npm run genkit:start
+[info] 
+=== Functions Setup
+[debug] [2025-06-23T18:14:54.282Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-23T18:14:54.282Z] > authorizing via signed-in user (alexanderchan486@gmail.com)
+[debug] [2025-06-23T18:14:54.282Z] [iam] checking project qpc-scaffolding for permissions ["firebase.projects.get"]
+[debug] [2025-06-23T18:14:54.282Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:14:54.282Z] Checked if tokens are valid: true, expires at: 1750705734759
+[debug] [2025-06-23T18:14:54.284Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/qpc-scaffolding:testIamPermissions [none]
+[debug] [2025-06-23T18:14:54.284Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/qpc-scaffolding:testIamPermissions x-goog-quota-user=projects/qpc-scaffolding
+[debug] [2025-06-23T18:14:54.284Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/qpc-scaffolding:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-23T18:14:54.539Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/qpc-scaffolding:testIamPermissions 200
+[debug] [2025-06-23T18:14:54.540Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/qpc-scaffolding:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[info] +  Wrote test/requirements.txt 
+[info] +  Wrote test/.gitignore 
+[info] +  Wrote test/main.py 
+[debug] [2025-06-23T18:15:56.726Z] Running command with virtualenv: command="C:\Users\lucar\OneDrive\Desktop\qpc-scaffolding\test\venv\Scripts\activate.bat", args=["","&&","pip3","install","--upgrade","pip"]
+[debug] [2025-06-23T18:16:01.034Z] Error: spawn "C:\Users\lucar\OneDrive\Desktop\qpc-scaffolding\test\venv\Scripts\activate.bat" ENOENT
+    at notFoundError (C:\Users\lucar\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\lucar\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\lucar\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    at Process.callbackTrampoline (node:internal/async_hooks:130:17)
+[error] 
+[error] Error: An unexpected error has occurred.
